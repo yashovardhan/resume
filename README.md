@@ -1,5 +1,4 @@
 # Resume
-Curriculum Vitae
 
 You can find on LinkedIn
 
