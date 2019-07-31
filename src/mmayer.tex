@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Yashovardhan Agrawal}
+\tagline{JavaScript Developer}
+
+\personalinfo{
+  \email{yashovardhan.agrawal@gmail.com}
+  \location{Jaipur, India}
+  \twitter{@yashovardhan}
+  \linkedin{linkedin.com/in/yashovardhanagrawal}
+  \github{github.com/yashovardhanagrawal}
+}
+
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Google Summer of Code 2018 Mentor}{coala ( COde AnaLysis Application )}{May 2018 -- Aug 2018}{}
+
+\divider
+
+\cvevent{React Native Developer}{Biller}{Apr 2018 -- Dec 2018}{Jaipur, India}
+
+\divider
+
+\cvevent{Google Code-in 2018 \& 2017 Mentor}{REDHAT JBoss Community}{Sep 2018 -- Dec 2018}{}
+
+\divider
+
+\cvevent{Campus Expert}{GitHub}{Oct 2017 -- Present}{}
+
+\divider
+
+\cvevent{Mentor of Change}{Atal Innovation Mission, Govt. of India}{Jul 2018 -- Present}{}
+
+\divider
+
+\cvevent{Co-Founder \& Organiser}{Hackference India}{May 2018 -- Apr 2019}{Bangalore, India}
+
+\cvsection{SKILLS}
+
+\cvskill{JavaScript, React Native, Redux}{5}
+
+\cvskill{Tensorflow.js, CI/CD, Firebase}{4}
+
+
+\cvsection{Education / Courses}
+\cvevent{Elements of AI}{University of Helsinki}{May 2018 -- Aug 2018}{}
+\divider
+
+\cvevent{Bachelor of Technology}{The LNM Institute of Information Technology}{August 2016 -- May 2020}{}
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
